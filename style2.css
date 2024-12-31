@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: black;
+    width: 370px;
+    height: auto;
+    padding:20px 7px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.display-bar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.display-bar input{
+    width: 95%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    background-color: black;
+    border: none;
+}
+.bottom-part{
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.bottom-part .numbers-part{
+    width:66%;
+    background-color: rgb(0, 0, 0);
+    margin-right:10px;
+}
+.bottom-part .numbers-part button,.operators-part button{
+    padding: 8px 10px;
+    width: 60px;
+    height:53px;
+    border-radius: 50%;
+    margin:5px 7px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 28px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+
+}
+.bottom-part .operators-part{
+    width: 23%;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.operators-part button{
+    background-color: orange;
+}
+.btn-pack{
+background-color: gray !important;
+font-size: 23px !important;
+}
+.togglepage{
+    width: 104%;
+    height: 272px;
+    position: absolute;
+    background-color: orange;
+    right:-7px;
+    border-radius: 10px;
+    display: none;
+    /* padding: 10px ; */
+  
+    padding: 10px 6px;
+    /* transition: all 0.5s ease-in-out; */
+    
+
+}
+.active{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+#svg2{
+    display:none;
+}
+.active2{
+    display: flex;
+}
+.lists{
+    margin: 15px 25px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
